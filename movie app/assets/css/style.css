@@ -10,9 +10,11 @@ header {
     align-items: center;
     justify-content: flex-end;
 }
+
 header form {
     margin-right: 20px;
 }
+
 header form input {
     border-radius: 25px;
     height: 44px;
@@ -23,6 +25,7 @@ header form input {
     font-size: 15px;
     color: #fff;
 }
+
 header form input:focus {
     outline: none;
     background-color: #22254b;
@@ -34,29 +37,48 @@ header form input:focus {
 .main {
     padding-top: 20px;
     background-color: #22254b;
+    min-height: 1500px;
 }
+
 .main .card {
     border: none;
     background-color: #373B69;
     position: relative;
-    overflow: hidden; /*loại bỏ hế phần dư thừa*/
+    overflow: hidden;/*loại bỏ hế phần dư thừa*/
+    margin-bottom: 25px;
 }
+
 .main .card img {
     height: 420px;
     object-fit: cover;
 }
+
 .main .card-body {
     display: flex;
     justify-content: space-between;
 }
+
 .main .card-body .card-title {
     color: #fff;
 }
+
 .main .card-body .rate {
     background-color: #22254b;
     padding: 5px 10px;
+}
+
+.main .card-body .green {
     color: green;
 }
+
+.main .card-body .orange {
+    color: orange;
+}
+
+.main .card-body .red {
+    color: red;
+}
+
 .overviews {
     position: absolute;
     background-color: #fff;
@@ -65,9 +87,11 @@ header form input:focus {
     bottom: -500px;
     transition: 0.3s ease-in;
 }
+
 .overviews p {
     text-align: justify;
 }
+
 .card:hover .overviews {
     bottom: 0;
 }
